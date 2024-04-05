@@ -28,9 +28,9 @@
                                 </svg></button>
                             <div class="bg-orange-100 px-6 py-4 flex justify-end">
                                 <button @click="deleteProgress(item.id)"
-                                    class="bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded-md mr-2">Delete</button>
+                                    class="bg-orange-500 hover:bg-orange-700 text-white py-2 px-4 rounded-md mr-2">Delete</button>
                                     <RouterLink :to="{ path: '/UpdateProgress/' + item.id }"
-                                    class="bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded-md mr-2">
+                                    class="bg-orange-950 hover:bg-orange-700 text-white py-2 px-4 rounded-md mr-2">
                                     Update</RouterLink>
 
                             </div>
