@@ -27,6 +27,12 @@ const router = createRouter({
       meta: { requiresAuth: true } 
     },
     {
+      path: '/UpdateProgress/:id',
+      name: 'UpdateProgress',
+      component: () => import('../views/user/UpdateProgress.vue'),
+      meta: { requiresAuth: true } 
+    },
+    {
       path: '/History',
       name: 'History',
       component: () => import('../views/user/History.vue'),
@@ -52,11 +58,10 @@ router.beforeEach((to, from, next) => {
     next({ name: 'login' });
   } else if ((to.name === 'login' || to.name === 'register') && isAuthenticated) {
     next({ name: 'user' }); 
-  } else {
+  }
+   else {
     next(); 
   }
 });
-
-
 
 export default router;

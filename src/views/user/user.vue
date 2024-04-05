@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import sideBare from '../components/sidebar.vue'
+import sideBare from '../../components/sidebar.vue'
 
 import axios from 'axios';
 

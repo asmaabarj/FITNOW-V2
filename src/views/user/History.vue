@@ -26,7 +26,7 @@
   
   <script>
   import axios from 'axios';
-  import sideBare from '../components/sidebar.vue';
+  import sideBare from '../../components/sidebar.vue';
   
   export default {
     components: {
@@ -57,4 +57,4 @@
     }
   };
   </script>
-  
+  ../../components/sidebar.vue
